@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Proyecto Cine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    
+    <!-- Botón de menú hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    
+    <nav class="nav">
+        <a href="index.html" class="logo">INICIO</a>
+        <div class="nav-links">
+            <a href="ponentes.html">Participantes</a>
+            <a href="programa.html">Programación</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="informacion.html">Información</a>
+        </div>
+    </nav>
+
+    <header class="full-screen-header">
+        <div class="header-content">
+            <h1>¿HABLAMOS?</h1>
+            <h2>Escríbenos 🫶🏻</h2>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="https://formspree.io/f/xjkbdovg" method="POST" id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <!--
+        <section class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p>Email: asociacionalgarabiacordoba@gmail.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Dirección: Calle del Cine 123, 28001 Madrid, España</p>
+        </section>
+        -->
+    </main>
+
+    <div class="animated-text">
+        <div class="text-content">
+            del 3 al 6 de junio de 2025 - Visita nuestra programación en las diferentes sedes
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre nosotros</h3>
+                <p>Memoria y cine doméstico es un proyecto que invita a la reflexión y difusión del cine doméstico.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: asociacionalgarabiacordoba@gmail.com</p>
+                <p></p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <!--
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    -->
+                    <a target="_blank" href="https://www.instagram.com/algarabiacultural/" class="social-icon">IG</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organizan</h3>
+                <p>Asociación Juvenil Algarabía Cultural </p>
+            </div>
+            <div class="footer-section">
+                <h3>Financian</h3>
+                <p>UCO</p>
+                <p></p>
+            </div>
+            <div class="footer-section">
+                <h3>Colaboran</h3>
+                    <!--
+                    <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IG</a>
+                    </div>
+                    -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Memoria y cine doméstico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
