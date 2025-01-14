@@ -423,6 +423,35 @@ footer {
 
 /* Breakpoint para dispositivos móviles (pantallas de hasta 768px) */
 @media (max-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-wrap: nowrap; /* Asegura que las tarjetas no se envuelvan */
+        gap: 20px;
+        justify-content: center;
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        padding: 10px; /* Añade un poco de padding para mejor apariencia */
+    }
+
+    .card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 200px; /* Ajusta el ancho de las tarjetas */
+        text-align: center;
+        flex: 0 0 auto; /* Asegura que las tarjetas no se redimensionen */
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card h3 {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #333;
+    }
     body {
         #cursor,
         #cursor-border {
