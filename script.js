@@ -182,3 +182,21 @@ if (document.querySelector('.info-content')) {
     });
 }
 });
+
+
+// JavaScript para mostrar y ocultar la sección emergente
+document.querySelectorAll('.info-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const target = document.getElementById(button.getAttribute('data-target'));
+        target.style.display = 'flex';
+    });
+});
+
+document.querySelectorAll('.close-button').forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('.info-popup').style.display = 'none';
+    });
+});
+
+
+

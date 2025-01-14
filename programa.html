@@ -32,29 +32,83 @@
     <header class="full-screen-header">
         <div class="header-content">
             <h1>PROGRAMACIÓN</h1>
-            <h2>horarios y actividades</h2>
+            <h2>Actividades</h2>
         </div>
     </header>
 
     <div class="parallax-container">
+        <!-- Dentro de cada parallax-section -->
         <section class="parallax-section" style="background-image: url('img/Fugir_verde.jpg');">
             <div class="parallax-content">
                 <h2>Encuentro con la Cinemathèque de Nouvelle-Aquitaine</h2>
                 <p>Filmoteca de Andalucía, Sala Josefina Molina</p>
+                <button class="info-button" data-target="info1">Más información</button>
             </div>
         </section>
+
+        <!-- Sección emergente oculta -->
+        <div id="info1" class="info-popup">
+            <div class="info-popup-content">
+                <span class="close-button">&times;</span>
+                <h2>Encuentro con la Cinemathèque de Nouvelle-Aquitaine</h2>
+                <br>
+                <p>Debate sobre la metodología de trabajo, materiales, contexto actual para las filmotecas y laboratorios de conservación, localización y búsqueda de materiales, preservación, digitalización de los filmes...</p>
+                <br>
+                <p>Proyecciones</p>
+            </div>
+        </div>
+
         <section class="parallax-section" style="background-image: url('img/anos80.jpg');">
             <div class="parallax-content">
                 <h2>Ciclo de películas</h2>
                 <p>Filmoteca de Andalucía</p>
+                <button class="info-button" data-target="info2">Más información</button>
             </div>
         </section>
+
+        <!-- Sección emergente oculta -->
+        <div id="info2" class="info-popup">
+            <div class="info-popup-content">
+                <h2>Proyecciones</h2>
+                <span class="close-button">&times;</span>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="img/mymexicanbretzel.jpg" alt="My Mexican Bretzel">
+                        <h3>My Mexican Bretzel (2019)</h3>
+                    </div>
+                    <div class="card">
+                        <img src="img/loblit.webp" alt="Fugir de l ́olbit">
+                        <h3>Fugir de l ́olbit (2020)</h3>
+                    </div>
+                    <div class="card">
+                        <img src="img/dawsonCity.webp" alt="Film about a father who">
+                        <h3>Dawson City: Frozen Time (2016)</h3>
+                    </div>
+                    <div class="card">
+                        <img src="img/herbaria.jpg" alt="Herbaria">
+                        <h3>Herbaria (2022)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="parallax-section" style="background-image: url('img/Herbaria_verde.jpg');">
             <div class="parallax-content">
                 <h2>Taller de cine sin cámara</h2>
                 <p>Casa de la Juventud (Planneo)</p>
+                <button class="info-button" data-target="info3">Más información</button>
+
             </div>
         </section>
+        <!-- Sección emergente oculta -->
+        <div id="info3" class="info-popup">
+            <div class="info-popup-content">
+                <span class="close-button">&times;</span>
+                <h2>Intervenciones: un taller de cine sin cámara</h2>
+                <br>
+                <p> Partiendo de un material preexistente en soporte analógico de 35 mm o 16 mm el alumnado utilizará la película de cine como medio creativo. Para ello utilizaremos la ténica de rayado sobre película, lo cual no requiere cámara y permite el trabajo sobre el propio soporte..</p>
+            </div>
+        </div>
     </div>
 
     <div class="animated-text">
@@ -109,7 +163,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Memoria y cine doméstico. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Memoria y cine doméstico.</p>
         </div>
     </footer>
 
