@@ -122,17 +122,18 @@ nav {
 .custom-button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #333; /* Color de fondo */
-    color: white;           /* Color del texto */
-    text-decoration: none;  /* Quita el subrayado */
-    font-size: 16px;        /* Tamaño de la fuente */
-    border-radius: 5px;     /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Animación suave */
+    background-color: var(--accent-color);
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 /* Efecto hover para el botón */
 .custom-button:hover {
-    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #555;
 }
 
 .full-screen-header h1,
@@ -169,7 +170,7 @@ nav {
     background-repeat: repeat-y;
     color: white;
     padding: 20px;
-    overflow: hidden; /* Asegura que no se vean áreas negras */
+    overflow: hidden;
 }
 
 
@@ -417,7 +418,7 @@ footer {
     }
 
     .speaker-grid {
-        grid-template-columns: 1fr 1fr; /* Dos columnas para tablets */
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -425,11 +426,11 @@ footer {
 @media (max-width: 768px) {
     .card-container {
         display: flex;
-        flex-wrap: nowrap; /* Asegura que las tarjetas no se envuelvan */
+        flex-wrap: nowrap;
         gap: 20px;
         justify-content: center;
-        overflow-x: auto; /* Permite el desplazamiento horizontal */
-        padding: 10px; /* Añade un poco de padding para mejor apariencia */
+        overflow-x: auto;
+        padding: 10px;
     }
 
     .card {
@@ -437,9 +438,9 @@ footer {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        width: 200px; /* Ajusta el ancho de las tarjetas */
+        width: 200px;
         text-align: center;
-        flex: 0 0 auto; /* Asegura que las tarjetas no se redimensionen */
+        flex: 0 0 auto;
     }
 
     .card img {
@@ -459,28 +460,28 @@ footer {
         }
     }
     .parallax-content img {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la relación de aspecto */
+        width: 100%;
+        height: auto;
     }
 
     /* Ajuste de los headers en móviles */
     .full-screen-header,
     .full-screen-header-ponentes {
-        background-size: cover; /* Asegura que la imagen cubra el contenedor */
-        background-position: center; /* Centra la imagen en el contenedor */
-        background-attachment: scroll; /* Permite que la imagen se mueva con el contenido */
-        height: 100vh; /* Asegura que el contenedor ocupe toda la altura del viewport */
-        width: 100vw; /* Asegura que el contenedor ocupe todo el ancho del viewport */
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        height: 100vh;
+        width: 100vw;
     }
 
     .full-screen-header h1,
     .full-screen-header-ponentes h1 {
-        font-size: 15vw; /* Tamaño del texto más grande en móviles */
+        font-size: 15vw;
     }
 
     .full-screen-header h2,
     .full-screen-header-ponentes h2 {
-        font-size: 6vw; /* Tamaño del texto más grande en móviles */
+        font-size: 6vw;
     }
 
     .full-screen-header h1,
@@ -494,17 +495,17 @@ footer {
     }
     
     .parallax-content {
-        padding: 2rem; /* Reduce el padding para móviles */
-        max-width: 1000%; /* Aumenta el ancho para móviles */
+        padding: 2rem;
+        max-width: 1000%;
     }
 
     .parallax-content h2 {
-        font-size: 8vw; /* Tamaño del texto más pequeño en móviles */
+        font-size: 8vw;
     }
 
     .parallax-content p {
-        font-size: 4vw; /* Tamaño del párrafo más pequeño en móviles */
-        line-height: 1.5; /* Mejora la legibilidad en pantallas pequeñas */
+        font-size: 4vw;
+        line-height: 1.5;
     }
 
     .contact-page h2,
@@ -513,7 +514,7 @@ footer {
     }
 
     .speaker-grid {
-        grid-template-columns: 1fr; /* Una columna para móviles */
+        grid-template-columns: 1fr;
     }
 
     .nav-links a {
@@ -522,12 +523,12 @@ footer {
     }
 
     nav {
-        padding: 1rem; /* Menos espacio para mejor legibilidad en móviles */
+        padding: 1rem;
     }
 
     .custom-button {
         font-size: 14px;
-        padding: 10px 20px; /* Botones más pequeños en móviles */
+        padding: 10px 20px;
     }
 
     input, textarea {
@@ -546,10 +547,10 @@ footer {
         font-size: 2rem;
     }
     .text-content {
-        animation: moveText 30s linear infinite; /* Aumentamos la duración para pantallas más pequeñas */
+        animation: moveText 30s linear infinite;
     }
     .text-content {
-        font-size: 1rem; /* Más pequeño en pantallas pequeñas */
+        font-size: 1rem;
         animation: moveText 10s linear infinite;
     }
 
@@ -564,18 +565,18 @@ footer {
         }
     }
     .text-content {
-        font-size: 1rem; /* Más pequeño en pantallas pequeñas */
+        font-size: 1rem;
         animation: moveText 10s linear infinite;
     }
     .parallax-content img {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la relación de aspecto */
+        width: 100%;
+        height: auto;
     }
 
     /* Ajuste de los headers en móviles */
     .full-screen-header h2,
     .full-screen-header-ponentes h2 {
-        font-size: 6vw; /* Tamaño del texto más grande en móviles */
+        font-size: 6vw;
     }
     .full-screen-header h1,
     .full-screen-header-ponentes h1 {
@@ -616,7 +617,7 @@ footer {
     }
 
     nav {
-        flex-direction: column; /* Nav links en columna */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -628,7 +629,7 @@ footer {
 
     .nav-links a {
         margin-left: 0;
-        margin-bottom: 1rem; /* Espaciado entre enlaces */
+        margin-bottom: 1rem;
     }
     .header-content h1 {
         font-size: 2.4rem;
@@ -648,7 +649,7 @@ footer {
         height: 100vh;
     }
     .text-content {
-        animation: moveText 20s linear infinite; /* Aumentamos la duración para pantallas más pequeñas */
+        animation: moveText 20s linear infinite;
     }
 }
 
@@ -676,7 +677,7 @@ footer {
         position: fixed;
         top: 1rem;
         right: 1rem;
-        z-index: 1001; /* Asegura que esté encima del contenido */
+        z-index: 1001;
     }
 
     .nav-links {
@@ -863,16 +864,16 @@ footer {
 /* Estilos para la sección emergente */
 /* Estilos para la sección emergente */
 .info-popup {
-    display: none; /* Oculto por defecto */
-    position: fixed; /* Posición fija para que esté sobre el contenido */
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 .info-popup-content {
@@ -883,20 +884,20 @@ footer {
     max-width: 800px;
     width: 90%;
     position: relative;
-    text-align: center; /* Center-align text */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .info-popup-content h2 {
-    font-size: 2.5rem; /* Increase font size */
-    color: #ff6347; /* Change color to a more vibrant one */
+    font-size: 2.5rem;
+    color: #ff6347;
     margin-bottom: 1rem;
 }
 
 .info-popup-content p {
-    font-size: 1.2rem; /* Increase font size */
+    font-size: 1.2rem;
     line-height: 1.6;
-    color: #333; /* Darker color for better readability */
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -904,18 +905,18 @@ footer {
 .close-button {
     position: absolute;
     top: 10px;
-    right: 10px; /* Ajusta este valor para desplazar la "x" */
+    right: 10px;
     font-size: 30px;
     cursor: pointer;
     color: #000;
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para mayor visibilidad */
-    padding: 5px; /* Espacio alrededor de la "x" */
-    border-radius: 50%; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 50%;
 }
 /* Estilos para las tarjetas */
 .card-container {
     display: flex;
-    flex-wrap: nowrap; /* Asegura que las tarjetas no se envuelvan */
+    flex-wrap: nowrap;
     gap: 20px;
     justify-content: center;
 }
@@ -925,7 +926,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 200px; /* Ajusta el ancho de las tarjetas */
+    width: 200px;
     text-align: center;
 }
 
